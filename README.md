@@ -30,42 +30,42 @@
  
  
 >版本记录 1.03 | 2017年11月15号
-<font color=:#999999>
-* 对图片点击做了鼠标悬停的放大效果
-* 对网站的首页做了撑满一屏的效果，目前首页的封面还在设计中，别急。。
-* 对快钱云闪付文章进行了内容的填充，还剩一部分
+
+* <font color=:#999999>对图片点击做了鼠标悬停的放大效果</font color>
+* <font color=:#999999>对网站的首页做了撑满一屏的效果，目前首页的封面还在设计中，别急。</font color>
+* <font color=:#999999>对快钱云闪付文章进行了内容的填充，还剩一部分</font color>
 
 #### 即将更新
 
-* 网站更新日志的封面
-* 首页封面
-* 快钱云闪付内容补充并完结
-* 对与每次网站更新日志的更新内容做出贴图效果，就是会记录每一个新的版本的样式。
+* <font color=:#999999>网站更新日志的封面</font color>
+* <font color=:#999999>首页封面</font color>
+* <font color=:#999999>快钱云闪付内容补充并完结</font color>
+* <font color=:#999999>对与每次网站更新日志的更新内容做出贴图效果，就是会记录每一个新的版本的样式。</font color>
 （以下两个努力开发中，毕竟我技术小白）
-* 底部社交链接写入鼠标悬停before与after的css样式
-* 内容页面加入轮播图
-</font color>
+* <font color=:#999999>底部社交链接写入鼠标悬停before与after的css样式</font color>
+* <font color=:#999999>内容页面加入轮播图</font color>
+
 -----
 
 >版本记录 1.02 | 2017年8月8号
 
 #### 本次更新
-* 对Work内容页面重新排版
-* 对Home的封面进行了更换
+* <font color=:#999999>对Work内容页面重新排版</font color>
+* <font color=:#999999>对Home的封面进行了更换</font color>
 
 #### 最近更新
 
-* 快钱云闪付文章更新
-* 底部社交链接写入鼠标悬停before与after的css样式
-* 内容页面加入轮播图
+* <font color=:#999999>快钱云闪付文章更新</font color>
+* <font color=:#999999>底部社交链接写入鼠标悬停before与after的css样式</font color>
+* <font color=:#999999>内容页面加入轮播图</font color>
 
 -----
 
 >版本记录 1.01 | 2017年7月24号
 
 #### 本次更新
-* 网站上线
+* <font color=:#999999>网站上线</font color>
 
 #### 最近更新
-* 对Work内容页面重新排版
-* 对Home的封面进行了更换
+* <font color=:#999999>对Work内容页面重新排版</font color>
+* <font color=:#999999>对Home的封面进行了更换</font color>
