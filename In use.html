@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>打字效果</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- TODO:  引入字体文件的地方 -->
+    <style type="text/css">
+        /* html {
+			background:#282828;
+		} */
+
+      body{
+          background-color: black
+          font-size: 120px;
+          color:rgb(255, 255, 255);
+          font-weight: 400;
+		  font-family: 'Consolas', 'Monaco', monospace;
+		  /* 'Space Mono', monospace, */
+      }
+      
+	  
+	  	/* 等宽字体开始 */
+	  @supports (display:none) {
+      dot {
+        display: inline-block; 
+        width: 3ch;
+        text-indent: -1ch;
+        vertical-align: bottom; 
+        overflow: hidden;
+        animation: dot 3s infinite step-start both;
+        /* 等宽字体很重要 */
+        font-family: Consolas, Monaco, monospace;
+	} 
+    /* 等宽字体结束 */
+
+}
+
+@keyframes dot {
+    33% { text-indent: 0; }
+    66% { text-indent: -2ch; }
+}
+    </style>
+</head>
+<body> 
+   <div id="Hotnews"></div>
+   <div id="Hotnews_desc"></div>
+  <script language="javascript">
+    var NewsTime = 1100;       //每条信息完整出现后停留时间
+    var TextTime = 100;       //每条信息中的字出现的间隔时间
+    
+    var newsi = 0;
+    var txti = 0;
+    var txttimer;     //调用setInterval的返回值，用于取消对函数的周期性执行
+    var newstimer;
+    
+    var newstitle = new Array();       //以数组形式保存每个信息的标题
+    newstitle[0] = " Hello!";      //
+    newstitle[1] = "I’m  Parmer";
+    function shownew(){
+        hwnewstr = newstitle[newsi];       //通过newsi传递，依次显示数组中的内容
+
+        if(txti >= hwnewstr.length){
+            clearInterval(txttimer);   //一旦超过要显示的文字长度，清除对shownew()的周期性调用
+            clearTimeout(newstimer);  
+            newsi++;     //显示数组中的下一个
+            
+            if(newsi >= newstitle.length){
+              return ; // 终止递归
+            }
+            newstimer = setTimeout("shownew()", NewsTime);     //间隔2000ms后重新调用shownew()
+            txti = 0;    
+            return;
+        }
+        clearInterval(txttimer); 
+
+        if (newsi === 0) {
+          document.getElementById("Hotnews").innerHTML = hwnewstr.substring(0,txti+1);     //截取字符，从第一个字符到txti+1个字符
+        }
+
+        if (newsi > 0) {
+          document.getElementById("Hotnews_desc").innerHTML = hwnewstr.substring(0,txti+1);
+        }
+
+        txti++;   //文字一个个出现
+        txttimer = setInterval("shownew()",TextTime);      
+    }
+    shownew();
+</script>
+</body>
+</html>
